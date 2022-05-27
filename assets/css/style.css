@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+
+}
+.Grid-Container {
+    display: grid;
+    grid-template-areas: 'header header'
+        'nav main'
+        'footer footer';
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100px 1fr 75px;
+    height: 100vh;
+    /*medida pantalla completa*/
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    grid-area: header;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 0.8em;
+}
+
+.namepage{
+    font-size: 30px;
+}
+
+nav {
+    grid-area: nav;
+    background: rgb(255, 255, 255);
+
+}
+
+footer {
+    grid-area: footer;
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding-top: 0.5em;
+    
+}
+
+/* Nav */
+.menu {
+    display: block;
+    margin: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 8em;
+    background-color: rgb(243, 242, 242);
+    height: 82em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+span{
+    color: rgb(163, 159, 159);
+}
+.title {
+    text-align: center;
+}
+
+#mySearch {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid #ddd;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    margin-left: 1.2em;
+}
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myMenu li a {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-left: 1em;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+
+#myMenu li a:hover {
+    background-color: rgb(199, 197, 197);
+}
+
+/* card */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-area: main;
+    background: rgb(255, 255, 255);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-right: 8em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.marca {
+    color: rgba(68, 65, 65, 0.333);
+}
+
+.price {
+    color: grey;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
